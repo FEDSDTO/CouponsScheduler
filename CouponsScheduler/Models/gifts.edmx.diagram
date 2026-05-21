@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6cd7f4211bbf4ba5a22b105876cc813f" Name="Diagram1">
+        <EntityTypeShape EntityType="GiftsModel.ActionToken" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Activity" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityBank" Width="1.5" PointX="6" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityBankDetail" Width="1.5" PointX="8.25" PointY="25.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityCreditCard" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityCreditCardLimit" Width="1.5" PointX="5.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityGroup" Width="1.5" PointX="0.75" PointY="16" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ActivityGroupMall" Width="1.5" PointX="3" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Auth" Width="1.5" PointX="7.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Auth_Setting" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BankMain" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BankMainDetail" Width="1.5" PointX="22.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BankMainRF" Width="1.5" PointX="15.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BonusCoupon" Width="1.5" PointX="22.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BonusCoupon_Log" Width="1.5" PointX="22.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BonusWallet" Width="1.5" PointX="22.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.BonusWallet_Log" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CalculationCoupon" Width="1.5" PointX="24.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CalculationInvoice" Width="1.5" PointX="24.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CardType" Width="1.5" PointX="0.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CardTypeKind" Width="1.5" PointX="24.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CarScanInvoice_Log" Width="1.5" PointX="25.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Coupon" Width="1.5" PointX="25.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Coupon_Log" Width="1.5" PointX="26.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Coupon_Temporary" Width="1.5" PointX="26.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CouponFillRecord" Width="1.5" PointX="26.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CouponImportTask" Width="1.5" PointX="17.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CouponPrinting" Width="1.5" PointX="2.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CouponReportUpload_Log" Width="1.5" PointX="26.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCard" Width="1.5" PointX="10.75" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCard_Log" Width="1.5" PointX="13" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardCoupon" Width="1.5" PointX="13" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardGift" Width="1.5" PointX="15.25" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardGifts_Log" Width="1.5" PointX="19.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardGiftsVoucher" Width="1.5" PointX="17.5" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardGroup" Width="1.5" PointX="13" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardGroup_Log" Width="1.5" PointX="15.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardInvoice" Width="1.5" PointX="15.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditCardLimitDetail" Width="1.5" PointX="26.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CreditPeriodsType" Width="1.5" PointX="27.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CRMTransferLog" Width="1.5" PointX="27.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Cumulative" Width="1.5" PointX="21.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Cumulative_Log" Width="1.5" PointX="23.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Cumulative_Temporary" Width="1.5" PointX="25.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeCoupon" Width="1.5" PointX="27.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeDepartmentSetting" Width="1.5" PointX="28.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeDept" Width="1.5" PointX="7.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeDept_Log" Width="1.5" PointX="9.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeDeptCoupon" Width="1.5" PointX="28.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeDeptInvoice" Width="1.5" PointX="28.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeInvoice" Width="1.5" PointX="28.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CumulativeMain" Width="1.5" PointX="28.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Department" Width="1.5" PointX="29.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Dept" Width="1.5" PointX="0.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EntityCoupon" Width="1.5" PointX="11.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EntityCoupon_Log" Width="1.5" PointX="13.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EntityPresent" Width="1.5" PointX="29.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EntityPresent_Log" Width="1.5" PointX="30.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourcher" Width="1.5" PointX="15.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchers_Gifts" Width="1.5" PointX="18" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchers_Invoice" Width="1.5" PointX="18" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchers_Log" Width="1.5" PointX="30.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchersCoupon" Width="1.5" PointX="30.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchersCouponMain" Width="1.5" PointX="15.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchersCouponReturn" Width="1.5" PointX="30.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Exchange_Gifts" Width="1.5" PointX="5.25" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Exchange_Gifts_Online" Width="1.5" PointX="5.25" PointY="27.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeBonus_Log" Width="1.5" PointX="17.75" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeCreditCardLimit" Width="1.5" PointX="30.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeCreditCardLimitSetting" Width="1.5" PointX="19.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeDepartment" Width="1.5" PointX="30.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeDepartmentSetting" Width="1.5" PointX="31.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangedRecord" Width="1.5" PointX="21.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntity_Log" Width="1.5" PointX="17.75" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntityBank" Width="1.5" PointX="8.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntityGift" Width="1.5" PointX="20" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntityHGRecord" Width="1.5" PointX="20" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntityInvoice" Width="1.5" PointX="20" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeEntityType" Width="1.5" PointX="6" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeHGLimit" Width="1.5" PointX="23.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeInvoice" Width="1.5" PointX="31.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeLimitCreditPeriod" Width="1.5" PointX="5.25" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeLog" Width="1.5" PointX="29.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeMall" Width="1.5" PointX="5.25" PointY="33.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeMiddleDepartment" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeModelType" Width="1.5" PointX="31.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeRecord" Width="1.5" PointX="0.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeRule" Width="1.5" PointX="3" PointY="24.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeType" Width="1.5" PointX="32.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.File" Width="1.5" PointX="3.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Gift" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.GiftsInstruction" Width="1.5" PointX="3.75" PointY="38" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.GiftsType" Width="1.5" PointX="32.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.GroupAuth_Main" Width="1.5" PointX="7.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.GroupAuth_Setting" Width="1.5" PointX="32.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.GroupClass" Width="1.5" PointX="32.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGCertificate" Width="1.5" PointX="17.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGCertificate_Detail" Width="1.5" PointX="20" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGMakeUp_Log" Width="1.5" PointX="32.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGRecord" Width="1.5" PointX="32.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGRecord_Log" Width="1.5" PointX="25.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGRecordMain" Width="1.5" PointX="33.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGResultError" Width="1.5" PointX="13.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.HGResultLog" Width="1.5" PointX="33.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.InvoiceFillRecord" Width="1.5" PointX="33.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.InvoiceRecord" Width="1.5" PointX="33.75" PointY="34.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.IVector" Width="1.5" PointX="34.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.LargeCoupon_Log" Width="1.5" PointX="34.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.LimitTypeDetailType" Width="1.5" PointX="9.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.LimitTypeType" Width="1.5" PointX="34.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Login_Setting" Width="1.5" PointX="34.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.LotteryCoupon" Width="1.5" PointX="34.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.LotteryCoupon_Log" Width="1.5" PointX="34.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MainCategory" Width="1.5" PointX="35.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Mall" Width="1.5" PointX="15.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MallType" Width="1.5" PointX="17.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MealCoupon" Width="1.5" PointX="20.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberDiscountCoupon" Width="1.5" PointX="19.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberDisountReocrd" Width="1.5" PointX="21.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberGiftsVoucher" Width="1.5" PointX="35.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberGiftsVouchers_Log" Width="1.5" PointX="13" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberRecord" Width="1.5" PointX="10.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberRecord_AddLog" Width="1.5" PointX="27.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberRecord_Log" Width="1.5" PointX="29.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MemberToken" Width="1.5" PointX="35.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MiddleCategory" Width="1.5" PointX="35.75" PointY="35.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ModelType" Width="1.5" PointX="0.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.OfflineCouponUsed" Width="1.5" PointX="36.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.OnlineDiscountRecord" Width="1.5" PointX="5.75" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Page" Width="1.5" PointX="36.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Page_Auth" Width="1.5" PointX="36.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Payment" Width="1.5" PointX="36.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PointPacket" Width="1.5" PointX="36.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PointPacket_Log" Width="1.5" PointX="36.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PosIdList" Width="1.5" PointX="11.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Position" Width="1.5" PointX="37.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PosToken" Width="1.5" PointX="23.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PresentEvent" Width="1.5" PointX="37.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.PrintAgain" Width="1.5" PointX="37.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ProductData" Width="1.5" PointX="37.75" PointY="32.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ReceivePrize" Width="1.5" PointX="31.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.RecordClassification" Width="1.5" PointX="33.75" PointY="38.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.RecordPayment" Width="1.5" PointX="13" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.RecordPaymentDetail" Width="1.5" PointX="15.25" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Reference" Width="1.5" PointX="37.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.RegisterRecordLog" Width="1.5" PointX="38.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.RePrintCoupon" Width="1.5" PointX="38.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ReturnCoupon" Width="1.5" PointX="23" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ReturnGiftsMain" Width="1.5" PointX="20.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SAPType" Width="1.5" PointX="7.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Signoff_Main" Width="1.5" PointX="38.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Signoff_Stage" Width="1.5" PointX="13.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.sysdiagram" Width="1.5" PointX="38.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.System_Setting" Width="1.5" PointX="15.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemAuth" Width="1.5" PointX="38.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemErrorLog" Width="1.5" PointX="17.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemExchangeLog" Width="1.5" PointX="19.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemLog" Width="1.5" PointX="38.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemMailAlert" Width="1.5" PointX="5.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemModifyLog" Width="1.5" PointX="25.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemType" Width="1.5" PointX="35.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ThirdPayment" Width="1.5" PointX="37.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UsedDepartment" Width="1.5" PointX="39.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UsedDepartmentSetting" Width="1.5" PointX="0.75" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UsedMiddleDepartment" Width="1.5" PointX="3.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UsedRecord" Width="1.5" PointX="39.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UsedRule" Width="1.5" PointX="3.75" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UserInfo_Main" Width="1.5" PointX="39.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.UserInfo_Setting" Width="1.5" PointX="39.75" PointY="33.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.WeekType" Width="1.5" PointX="39.75" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.z_Temp_HGPay" Width="1.5" PointX="39.75" PointY="39.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.z_Temp_HGPayGifts" Width="1.5" PointX="40.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.z_Temp_HGPayInvoice" Width="1.5" PointX="40.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.CustomersOrderBackup2013" Width="1.5" PointX="40.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.EVourchersCoupon_Log" Width="1.5" PointX="40.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.ExchangeLimit" Width="1.5" PointX="40.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.MealCoupon_Log" Width="1.5" PointX="23" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.OrderCoupon" Width="1.5" PointX="21.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.SystemMailTarget" Width="1.5" PointX="8" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.TestTable" Width="1.5" PointX="41.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="GiftsModel.Vourcher" Width="1.5" PointX="5.75" PointY="42.75" IsExpanded="true" />
+        <AssociationConnector Association="GiftsModel.FK_ActivityBankDetail_ActivityBank" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ActivityBankDetail_ActivityBankDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ActivityCreditCard_ActivityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ActivityGroupMall_ActivityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityType_ActivityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeMainDepartment_ActivityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeRule_ActivityGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCard_Log_CreditCard_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardCoupon_Log_CreditCard_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardGroup_Log_CreditCard_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardGifts_Log_CreditCardGroup_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardGiftsVouchers_CreditCardGifts" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardGroup_Log_CreditCardGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_CreditCardInvoice_Log_CreditCard_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_EVourchers_Gifts_EVourchers" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_EVourchers_Invoice_EVourchers" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_Exchange_Gifts_ExchangeRule" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_Exchange_Gifts_Online_ExchangeRule" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityGifts_ExchangeEntity_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityHGRecord_ExchangeEntity_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityInvoice_ExchangeEntity_Log" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityBank_ExchangeEntityType" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeEntityType_File" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeLimitCreditPeriods_ExchangeRule" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ExchangeMall_ExchangeMall" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_File_Gifts" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_GiftsInstructions_Gifts" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_UsedMainDepartment_Gifts" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_UsedRule_Gifts" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_HGCertificate_Detail_HGCertificate" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_MealCoupon_Log_MCId" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_MemberGiftsVouchers_Log_MemberRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_RecordPayment_MemberRecord" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_RecordPaymentDetail_RecordPayment" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_ReturnCoupon_ReturnGiftsMain" ManuallyRouted="false" />
+        <AssociationConnector Association="GiftsModel.FK_SystemMailTarget" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
