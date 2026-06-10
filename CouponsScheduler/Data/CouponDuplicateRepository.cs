@@ -25,6 +25,8 @@ namespace CouponsScheduler.Data
             var couponType = ConfigurationManager.AppSettings["DuplicateCheck.CouponType"] ?? "C";
             var logStatus = ConfigurationManager.AppSettings["DuplicateCheck.LogStatus"] ?? "N";
             var minDupStr = ConfigurationManager.AppSettings["DuplicateCheck.MaxDuplicateCount"];
+            var requireModifyUser = bool.Parse(
+                ConfigurationManager.AppSettings["DuplicateCheck.RequireModifyUser"] ?? "true");
             int? minDuplicateCount = null;
             if (!string.IsNullOrWhiteSpace(minDupStr) && int.TryParse(minDupStr, out var minCnt))
                 minDuplicateCount = minCnt;
@@ -59,6 +61,7 @@ namespace CouponsScheduler.Data
                     .Where(l => l.Status == logStatus
                         && l.MemberId != null
                         && l.CouponNo != null
+                        && (!requireModifyUser || (l.ModifyUser != null && l.ModifyUser != 0))
                         && l.CreateOn >= minLogStart
                         && l.CreateOn <= maxLogEnd)
                     .ToList();
@@ -71,9 +74,12 @@ namespace CouponsScheduler.Data
                         CouponNo = (l.CouponNo ?? string.Empty).Trim(),
                         l.CreateOn,
                         l.Status,
-                        RecordKey = l.recordKey
+                        RecordKey = l.recordKey,
+                        l.ModifyUser
                     })
-                    .Where(l => l.CouponNo != string.Empty && IsValidMemberId(l.MemberId))
+                    .Where(l => l.CouponNo != string.Empty
+                        && IsValidMemberId(l.MemberId)
+                        && (!requireModifyUser || (l.ModifyUser.HasValue && l.ModifyUser.Value != 0)))
                     .ToList();
 
                 var scopedLog = (
@@ -89,7 +95,8 @@ namespace CouponsScheduler.Data
                         CouponNo = cl.CouponNo,
                         CreateOn = cl.CreateOn,
                         Status = cl.Status,
-                        RecordKey = cl.RecordKey
+                        RecordKey = cl.RecordKey,
+                        ModifyUser = cl.ModifyUser
                     }).ToList();
 
                 var dupCounts = scopedLog

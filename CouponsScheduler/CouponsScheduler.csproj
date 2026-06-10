@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>CouponsScheduler</RootNamespace>
     <AssemblyName>CouponsScheduler</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -72,11 +72,25 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <EntityDeploy Include="Models\Gifts\gifts.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>gifts.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.csdl">
+      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
+      <LogicalName>Models.Gifts.gifts.csdl</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.ssdl">
+      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
+      <LogicalName>Models.Gifts.gifts.ssdl</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.msl">
+      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
+      <LogicalName>Models.Gifts.gifts.msl</LogicalName>
+    </EmbeddedResource>
     <None Include="Models\Gifts\gifts.edmx.diagram">
       <DependentUpon>gifts.edmx</DependentUpon>
     </None>

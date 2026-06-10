@@ -26,6 +26,7 @@ namespace CouponsScheduler.Models
         public DateTime? CreateOn { get; set; }
         public string Status { get; set; }
         public string RecordKey { get; set; } // 用於比對重複的鍵值
+        public int? ModifyUser { get; set; }
         public int DuplicateCount { get; set; }
         public string InvoiceNo { get; set; }
         public string IssueType { get; set; } // 對應 IssueTypes

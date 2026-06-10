@@ -103,8 +103,8 @@ namespace CouponsScheduler.Notifications
                     g.CouponNo, g.DuplicateCount, g.InvoiceNo, g.IssueType, string.Join(", ", g.MemberIds)));
                 foreach (var d in g.Details)
                 {
-                    sb.AppendLine(string.Format("  - LogId={0}, MemberId={1}, CreateOn={2:yyyy-MM-dd HH:mm:ss}, Invoice={3}",
-                        d.Id, d.MemberId, d.CreateOn, d.InvoiceNo));
+                    sb.AppendLine(string.Format("  - LogId={0}, MemberId={1}, CreateOn={2:yyyy-MM-dd HH:mm:ss}, ModifyUser={3}, Invoice={4}",
+                        d.Id, d.MemberId, d.CreateOn, d.ModifyUser, d.InvoiceNo));
                 }
             }
             return sb.ToString();
