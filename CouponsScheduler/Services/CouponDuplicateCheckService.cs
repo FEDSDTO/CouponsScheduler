@@ -8,14 +8,7 @@ namespace CouponsScheduler.Services
 {
     public class CouponDuplicateCheckService : ICouponDuplicateCheckService
     {
-        private readonly CouponDuplicateRepository _repo;
-        private readonly IInvoiceResolver _invoiceResolver;
-
-        public CouponDuplicateCheckService()
-        {
-            _repo = new CouponDuplicateRepository();
-            _invoiceResolver = new InvoiceResolver();
-        }
+        private readonly CouponDuplicateRepository _repo = new CouponDuplicateRepository();
 
         public DuplicateCheckResult Run(DateTime? checkDateLocal)
         {
@@ -36,22 +29,17 @@ namespace CouponsScheduler.Services
                 return result;
             }
 
-            foreach (var row in rows)
-                row.InvoiceNo = _invoiceResolver.Resolve(row.RecordKey, row.MemberId, row.CreateOn);
-
             var groups = rows
                 .GroupBy(r => r.CouponNo, StringComparer.OrdinalIgnoreCase)
                 .Select(g =>
                 {
                     var members = g.Select(x => x.MemberId).Distinct(StringComparer.OrdinalIgnoreCase).ToList();
                     var issueType = members.Count > 1 ? IssueTypes.MultiMember : IssueTypes.MultiN;
-                    var invoice = g.Select(x => x.InvoiceNo).FirstOrDefault(i => i != "查無") ?? "查無";
 
                     return new DuplicateCouponGroup
                     {
                         CouponNo = g.Key,
                         DuplicateCount = g.First().DuplicateCount,
-                        InvoiceNo = invoice,
                         IssueType = issueType,
                         MemberIds = members,
                         Details = g.OrderByDescending(x => x.Id).ToList()

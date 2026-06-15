@@ -89,25 +89,34 @@ namespace CouponsScheduler.Notifications
             if (!result.HasDuplicate)
             {
                 sb.AppendLine(string.Format("[Coupon重複檢查] {0}", dateStr));
-                sb.AppendLine("結果：無");
-                sb.AppendLine("範圍：今天有效抵用券 + 各券 UsedStart~UsedEnd 區間內 Coupon_Log（c/b/r, N）");
+                sb.AppendLine("結果：無重複券號");
                 return sb.ToString();
             }
 
             sb.AppendLine(string.Format("[Coupon重複檢查] {0}", dateStr));
             sb.AppendLine(string.Format("發現 {0} 組重複券號", result.DuplicateCouponCount));
-            sb.AppendLine("券號 | 重複次數 | 發票 | IssueType | Members");
+            sb.AppendLine("券號 | 重複次數 | 異常類型");
             foreach (var g in result.Items)
             {
-                sb.AppendLine(string.Format("{0} | {1} | {2} | {3} | {4}",
-                    g.CouponNo, g.DuplicateCount, g.InvoiceNo, g.IssueType, string.Join(", ", g.MemberIds)));
+                sb.AppendLine(string.Format("{0} | {1} | {2}",
+                    g.CouponNo, g.DuplicateCount, ToIssueTypeLabel(g.IssueType)));
                 foreach (var d in g.Details)
                 {
-                    sb.AppendLine(string.Format("  - LogId={0}, MemberId={1}, CreateOn={2:yyyy-MM-dd HH:mm:ss}, ModifyUser={3}, Invoice={4}",
-                        d.Id, d.MemberId, d.CreateOn, d.ModifyUser, d.InvoiceNo));
+                    sb.AppendLine(string.Format("  - GId={0}, 券號={1}, 建立時間={2:yyyy-MM-dd HH:mm:ss}, 修改人員={3}",
+                        d.GId, d.CouponNo, d.CreateOn, d.ModifyUser));
                 }
             }
             return sb.ToString();
+        }
+
+        private static string ToIssueTypeLabel(string issueType)
+        {
+            switch (issueType)
+            {
+                case IssueTypes.MultiN: return "同會員重複領券";
+                case IssueTypes.MultiMember: return "多會員重複領券";
+                default: return issueType;
+            }
         }
 
         private static void AddAddressesFromFile(MailAddressCollection collection, string fileName)

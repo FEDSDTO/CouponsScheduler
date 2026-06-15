@@ -45,9 +45,6 @@
     <Reference Include="NLog">
       <HintPath>..\packages\NLog.5.3.4\lib\net46\NLog.dll</HintPath>
     </Reference>
-    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
-      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -67,7 +64,8 @@
     <Compile Include="Jobs\**\*.cs" />
     <Compile Include="Models\**\*.cs" />
     <Compile Include="Notifications\**\*.cs" />
-    <Compile Include="Services\**\*.cs" />
+    <Compile Include="Services\CouponDuplicateCheckService.cs" />
+    <Compile Include="Services\ICouponDuplicateCheckService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -79,18 +77,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>gifts.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.csdl">
-      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
-      <LogicalName>Models.Gifts.gifts.csdl</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.ssdl">
-      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
-      <LogicalName>Models.Gifts.gifts.ssdl</LogicalName>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(IntermediateOutputPath)edmxResourcesToEmbed\Models\Gifts\gifts.msl">
-      <DependentUpon>Models\Gifts\gifts.edmx</DependentUpon>
-      <LogicalName>Models.Gifts.gifts.msl</LogicalName>
-    </EmbeddedResource>
     <None Include="Models\Gifts\gifts.edmx.diagram">
       <DependentUpon>gifts.edmx</DependentUpon>
     </None>
