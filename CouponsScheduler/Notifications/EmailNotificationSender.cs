@@ -41,7 +41,9 @@ namespace CouponsScheduler.Notifications
                 var pwd = ConfigurationManager.AppSettings["Notification.SmtpPassword"];
 
                 var dateStr = TaipeiTimeHelper.FormatDate(result.CheckDate);
-                var subject = string.Format("[Coupon重複檢查] {0}", dateStr);
+                var subject = result.HasDuplicate
+                    ? string.Format("[Coupon重複檢查] {0}", dateStr)
+                    : string.Format("[Coupon 重複檢查] {0}｜未發現重複券號", dateStr);
                 var body = BuildBody(result, dateStr);
 
                 using (var msg = new MailMessage())
@@ -88,8 +90,13 @@ namespace CouponsScheduler.Notifications
             var sb = new StringBuilder();
             if (!result.HasDuplicate)
             {
-                sb.AppendLine(string.Format("[Coupon重複檢查] {0}", dateStr));
-                sb.AppendLine("結果：無重複券號");
+                sb.AppendLine("系統已完成 Coupon 券號重複檢查。");
+                sb.AppendLine("檢查範圍：目前仍處於活動期間內的抵用券");
+                sb.AppendLine("檢查方式：比對所有符合條件的 Coupon 券號是否有重複");
+                sb.AppendLine(string.Format("檢查日期：{0}", dateStr));
+                sb.AppendLine("檢查結果：未發現重複券號");
+                sb.AppendLine();
+                sb.AppendLine("此信件由系統自動發送，請勿直接回覆。");
                 return sb.ToString();
             }
 
